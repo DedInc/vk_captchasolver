@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from PIL import Image
 from requests import get
-from os.path import dirname, abspath, pjoin
+from os.path import dirname, abspath, join as pjoin
 from os import remove
 from random import randint as rnt
 from numpy import array, expand_dims, float32, uint8

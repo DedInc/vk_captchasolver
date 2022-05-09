@@ -6,7 +6,7 @@ with open('README.md', 'r', encoding='utf-8') as f:
 
 setup(
     name='vk_captchasolver',
-    version='1.0.2',
+    version='1.0.3',
     author='Maehdakvan',
     author_email='visitanimation@google.com',
     description='VKontakte captcha solver with 91% accuracy right.',
