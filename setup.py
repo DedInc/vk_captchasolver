@@ -1,11 +1,12 @@
-import setuptools
+from setuptools import setup, find_packages
+from os import name as osn
 
 with open('README.md', 'r', encoding='utf-8') as f:
     long_description = f.read()
 
-setuptools.setup(
+setup(
     name='vk_captchasolver',
-    version='1.0.0',
+    version='1.0.2',
     author='Maehdakvan',
     author_email='visitanimation@google.com',
     description='VKontakte captcha solver with 91% accuracy right.',
@@ -20,9 +21,8 @@ setuptools.setup(
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
     ],
-    packages=['vk_captchasolver'],
+    packages=find_packages(),
     include_package_data = True,
-    install_requires = ['Pillow', 'onnxruntime', 'numpy', 'requests'],
-    data_files = [('vk_captchasolver',  ['vk_captchasolver/captcha_model.onnx', 'vk_captchasolver/ctc_model.onnx'])],
+	install_requires = ['Pillow', 'numpy', 'requests', 'onnxruntime==1.9.0' if osn == 'nt' else 'onnxruntime>=1.9.0'],
     python_requires='>=3.6'
 )

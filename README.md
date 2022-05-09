@@ -18,6 +18,7 @@ print(captcha)
 ```python
 import vk_captchasolver as vc
 
-captcha = vc.solve(sid=74838345480543, s=1)
+captcha = vc.solve(sid=74838345480543, s=1) #Solve by sid and s
+captcha = vc.solve(sid=74838345480543) #Solve by sid only
 print(captcha)
 ```

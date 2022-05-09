@@ -1,0 +1,4 @@
+include README.MD
+include LICENSE
+include vk_captchasolver/captcha_model.onnx
+include vk_captchasolver/ctc_model.onnx
