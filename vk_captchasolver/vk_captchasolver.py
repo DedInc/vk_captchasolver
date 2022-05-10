@@ -35,5 +35,5 @@ def solve(image=None, sid=None, s=None):
 
 	captcha = ''.join([codemap[c] for c in uint8(out[-1][out[0]>0])])
 	if image == None:
-		remove(join(CDIR, fname))
+		remove(pjoin(CDIR, fname))
 	return captcha
